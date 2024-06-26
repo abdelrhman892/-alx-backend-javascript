@@ -1,14 +1,14 @@
-function getResponseFromAPI(){
-    return new Promise(
-        (resolve, reject) => {
-            let connect = true;
+export default function getResponseFromAPI() {
+  return new Promise(
+    (resolve, reject) => {
+      const connect = true;
 
-            if (connect){
-                resolve("Connection established")
-            }
-            else {
-                reject(Error("Connection failed"))
-            }
-        }
-    );
+      if (connect){
+        resolve('Connection established');
+      }
+      else {
+        reject(Error('Connection failed'));
+      }
+    }
+  );
 }
