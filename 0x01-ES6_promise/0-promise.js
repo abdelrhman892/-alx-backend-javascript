@@ -3,10 +3,9 @@ export default function getResponseFromAPI() {
     (resolve, reject) => {
       const connect = true;
 
-      if (connect){
+      if (connect) {
         resolve('Connection established');
-      }
-      else {
+      } else {
         reject(Error('Connection failed'));
       }
     }
